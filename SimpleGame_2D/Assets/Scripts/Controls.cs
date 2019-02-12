@@ -51,5 +51,10 @@ public class Controls : MonoBehaviour
         {
             rb.velocity = new Vector2(-movespeed, rb.velocity.y);
         }
+
+        if(rb.position.y < -5f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
     }
 }
