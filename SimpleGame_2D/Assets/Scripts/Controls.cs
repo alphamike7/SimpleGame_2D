@@ -37,7 +37,7 @@ public class Controls : MonoBehaviour
 
         }
 
-        if (moveleft)
+        if (moveup)
         {
             rb.velocity = new Vector2(rb.velocity.x, upspeed);
         }
